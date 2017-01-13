@@ -1,2 +1,0 @@
-# softuni
-Software University
