@@ -106,7 +106,7 @@
 				TargetAttributes = {
 					10362E1C1E23FD33004E0222 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = P6Y2W9RQ54;
+						DevelopmentTeam = 45TR8MZG2M;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
@@ -276,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = myIcon;
-				DEVELOPMENT_TEAM = P6Y2W9RQ54;
+				DEVELOPMENT_TEAM = 45TR8MZG2M;
 				INFOPLIST_FILE = Project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Noobs.Inc.Project01;
@@ -290,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = myIcon;
-				DEVELOPMENT_TEAM = P6Y2W9RQ54;
+				DEVELOPMENT_TEAM = 45TR8MZG2M;
 				INFOPLIST_FILE = Project01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Noobs.Inc.Project01;
@@ -319,6 +319,7 @@
 				10362E311E23FD33004E0222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
