@@ -52,13 +52,13 @@ func find_recipe_with_product ( product: String) {
     
 }
 
-var example = String(Products.sugar)            // example := some product from enum and convert to string;
+var example = String(describing: Products.sugar)            // example := some product from enum and convert to string;
                                                 // func find_recipe_with_product ( product: String)
 //var example = String(Products.water)          // example := some product from enum and convert to string
                                                 // func find_recipe_with_product ( product: String)
 //var example = String(Products.apple)          // example := some product from enum and convert to string
                                                 // func find_recipe_with_product ( product: String)
-find_recipe_with_product(example)
+find_recipe_with_product(product: example)
 
 
 
@@ -82,9 +82,9 @@ for (fridgeProduct, fridgeValue) in fridge {
 //This function checks if you have product in all recipes and how much you need if you don't have enough
 
 func check_product_in_recipes ( product: String) {
-    if  recipe1.indexForKey(product) != nil {
+    if  recipe1.index(forKey: product) != nil {
         // the key exists in the dictionary
-        if fridge.indexForKey(product) != nil{
+        if fridge.index(forKey: product) != nil{
             if ((fridge[product]! - recipe1[product]!) >= 0) {
                 print("\nWe have enough \(product): \(fridge[product]) in the fridge for recepe1 wich need \(recipe1[product]) ")
             } else {
@@ -96,9 +96,9 @@ func check_product_in_recipes ( product: String) {
         
     }
     
-    if  recipe2.indexForKey(product) != nil {
+    if  recipe2.index(forKey: product) != nil {
         // the key exists in the dictionary
-        if fridge.indexForKey(product) != nil{
+        if fridge.index(forKey: product) != nil{
             if ((fridge[product]! - recipe2[product]!) >= 0) {
                 print("\nWe have enough \(product): \(fridge[product]) in the fridge for recepe2 wich need \(recipe2[product]) ")
             } else {
@@ -110,9 +110,9 @@ func check_product_in_recipes ( product: String) {
         
     }
     
-    if  recipe3.indexForKey(product) != nil {
+    if  recipe3.index(forKey: product) != nil {
         // the key exists in the dictionary
-        if fridge.indexForKey(product) != nil{
+        if fridge.index(forKey: product) != nil{
             if ((fridge[product]! - recipe3[product]!) >= 0) {
                 print("\nWe have enough \(product): \(fridge[product]) in the fridge for recepe3 wich need \(recipe3[product]) ")
             } else {
@@ -128,12 +128,12 @@ func check_product_in_recipes ( product: String) {
 }
 
 
-check_product_in_recipes(String(Products.sugar));
-check_product_in_recipes(String(Products.apple));
-check_product_in_recipes(String(Products.orange));
-check_product_in_recipes(String(Products.tea));
-check_product_in_recipes(String(Products.milk));
-check_product_in_recipes(String(Products.water));
+check_product_in_recipes(product: String(describing: Products.sugar));
+check_product_in_recipes(product: String(describing: Products.apple));
+check_product_in_recipes(product: String(describing: Products.orange));
+check_product_in_recipes(product: String(describing: Products.tea));
+check_product_in_recipes(product: String(describing: Products.milk));
+check_product_in_recipes(product: String(describing: Products.water));
 
 
 //If no,function to print information about what products must be bought and how many (how much)
